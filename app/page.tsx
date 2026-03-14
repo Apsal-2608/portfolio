@@ -188,7 +188,7 @@ export default function HomePage() {
             >
               <div className="inline-flex items-center gap-2 rounded-full border border-emerald-400/40 bg-emerald-500/5 px-3 py-1 text-xs font-medium text-emerald-300 shadow-[0_0_25px_rgba(16,185,129,0.45)]">
                 <span className="h-1.5 w-1.5 rounded-full bg-emerald-400 shadow-[0_0_15px_rgba(16,185,129,0.9)]" />
-                Open to internships · Cybersecurity & Networking
+                Open to Work · Cybersecurity & Networking
               </div>
 
               <div className="space-y-4">
