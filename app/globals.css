@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-cyberBg text-slate-100;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #38bdf8, #a855f7);
+  border-radius: 999px;
+}
+
+.glass-panel {
+  @apply bg-slate-900/40 border border-slate-700/60 backdrop-blur-xl rounded-3xl;
+}
+
+.glass-panel-soft {
+  @apply bg-slate-900/30 border border-slate-700/40 backdrop-blur-xl rounded-2xl;
+}
+
+.mouse-glow {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.mouse-glow::before {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.18), transparent 60%);
+  transform: translate3d(var(--mouse-x, 0), var(--mouse-y, 0), 0);
+  transition: transform 120ms ease-out;
+}
+
+.cyber-grid {
+  @apply bg-grid-cyber bg-grid-cyber;
+  mask-image: radial-gradient(circle at center, black 0%, transparent 70%);
+  opacity: 0.4;
+}
+
+.section-heading {
+  @apply text-3xl md:text-4xl font-semibold tracking-tight;
+}
+
+.badge-pill {
+  @apply inline-flex items-center rounded-full border border-slate-700/60 bg-slate-900/60 px-3 py-1 text-xs font-medium text-slate-200 shadow-[0_0_20px_rgba(15,23,42,0.8)];
+}
+
